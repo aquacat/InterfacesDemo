@@ -2,14 +2,16 @@ namespace InterfacesDemo
 {
     public class Monster : IEquatable<Monster>
     {
-        private int Level;
+        public int Level;
         public string Name;
-        public Monster(string name, int level){
+        public Monster(string name, int level)
+        {
             this.Name = name;
             this.Level = level;
         }
 
-        public bool Equals(Monster other){
+        public bool Equals(Monster other)
+        {
             return this.Level == other.Level;
         }
 
